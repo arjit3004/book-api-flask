@@ -4,7 +4,7 @@ from flask_mongoengine import MongoEngine
 app = Flask(__name__)
 
 database_name = 'API'
-DB_URI = "mongodb+srv://book:book123@cluster0.5lkp2.mongodb.net/API?retryWrites=true&w=majority"
+DB_URI = "mongodb+srv://<database_name>:<password>@cluster0.5lkp2.mongodb.net/API?retryWrites=true&w=majority"
 app.config["MONGODB_HOST"] = DB_URI
 
 db = MongoEngine()
